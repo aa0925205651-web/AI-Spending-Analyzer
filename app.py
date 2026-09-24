@@ -1,11 +1,8 @@
+from pathlib import Path
+
 import pandas as pd
 
-data = {
-    "category": ["Food", "Transport", "Entertainment", "Food", "Shopping"],
-    "amount": [120, 50, 300, 180, 1200]
-}
-
-df = pd.DataFrame(data)
+df = pd.read_csv(Path(__file__).with_name("spending.csv"))
 
 print("=== AI Spending Analyzer ===")
 
