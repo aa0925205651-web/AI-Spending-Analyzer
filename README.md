@@ -1,21 +1,25 @@
 # AI Spending Analyzer
 
-A beginner-friendly Python project for analyzing personal spending habits.
+一個簡單的 Streamlit 消費分析網頁 App。
 
-## Goal
+## 開始使用
 
-This project analyzes spending records and helps users understand:
+在專案資料夾執行：
 
-- Where their money goes
-- Which categories cost the most
-- Unusual spending
-- Basic suggestions for improving spending habits
+```powershell
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
 
-## Built with
+執行後開啟終端機顯示的網址（通常是 http://localhost:8501）。
 
-- Python
-- Pandas
+上傳 CSV 後，頁面會顯示總消費金額、最大單筆消費、各類別總金額和長條圖。未上傳時會使用 `spending.csv` 範例資料。
 
-## Status
+CSV 需要 `category` 和 `amount` 兩欄，例如：
 
-🚧 Work in progress
+```csv
+category,amount
+Food,120
+Transport,50
+Food,180
+```
